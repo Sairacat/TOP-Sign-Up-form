@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'norse';
+    src: 
+      url(./fonts/norse/norse-webfont.woff) format('woff'),
+      url(./fonts/norse/norse-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: 
+    url(./pic/wallpaperflare.com_wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.rightside-wrapper {
+    width: 70%;
+    height: 100vh;
+    margin-left: auto;
+    background-color: white;
+}
+
+.log-wrapper {
+    font-size: 75px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    width: 30%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 20vh;
+}
+
+.odin-image {
+    height: 1.25em;
+    width: auto;
+}
+
+.odin {
+    font-family: 'norse', sans-serif;
+}
