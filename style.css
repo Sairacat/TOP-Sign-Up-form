@@ -28,6 +28,7 @@ body {
     height: 100vh;
     margin-left: auto;
     background-color: white;
+    padding: 10vh 0;
 }
 
 .log-wrapper {
@@ -52,4 +53,92 @@ body {
 
 .odin {
     font-family: 'norse', sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    margin-left: 5vw;
+}
+
+.legend {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+form {
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding: 10px 5vw;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    gap: 75px;
+}
+
+.form-part > label {
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-bottom: 1px;
+    font-weight: 300;
+}
+
+.form-part > input {
+    width: 200px;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+    height: 25px;
+}
+
+button[type='submit'] {
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 1em 3em;
+    border-radius: 8px;
+    border: none;
+    background-color: #cc0099;
+    margin-left: 5vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.footer {
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 5vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p > span {
+    color: #cc0099;
+}
+
+p > span:hover {
+    cursor: pointer;
+}
+
+input[type='password']:user-invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }

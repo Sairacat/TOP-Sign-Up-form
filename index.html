@@ -11,6 +11,48 @@
         <img src="./pic/odin-lined.png" alt="odin-lined" class="odin-image">
         <span class="odin">ODIN</span>
     </div>
-    <div class="rightside-wrapper"></div>
+    <div class="rightside-wrapper">
+        <div class="title">"All the world's a stage,<br>
+            And all the men and women merely players;<br>
+            They have their exits and their entrances."</div>
+        <p class="title">You <em>know</em> you want to.</p>
+
+        <form action="" method="get" id="user_form">
+            <div class="legend">Let's do this!</div>
+            <div class="form-row">
+                <div class="form-part">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="first_name" required>
+                </div>
+                <div class="form-part">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="last_name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-part">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="user_email">
+                </div>
+                <div class="form-part">
+                    <label for="pnumber">PHONE NUMBER</label>
+                    <input type="tel" id="pnumber" name="user_pnumber">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-part">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="user_password" required>
+                </div>
+                <div class="form-part">
+                    <label for="password_confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="password_confirm" name="password_confirm" required>
+                </div>
+            </div>
+        </form>
+
+        <button type="submit" form="user_form">Create Account</button>
+        <p class="footer">Already have an account? <span>Log in</span></p>
+    </div>
 </body>
 </html>
