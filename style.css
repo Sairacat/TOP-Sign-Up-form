@@ -19,16 +19,18 @@ body {
     background-image: 
     url(./pic/wallpaperflare.com_wallpaper.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 
 .rightside-wrapper {
+    position: relative;
     width: 70%;
     height: 100vh;
     margin-left: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 10vh 0;
+    transition: all 0.3s ease;
 }
 
 .log-wrapper {
@@ -43,7 +45,8 @@ body {
     align-items: center;
     gap: 5px;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 20vh;
+    top: 17vh;
+    transition: all 0.3s ease;
 }
 
 .odin-image {
@@ -141,4 +144,32 @@ input:focus {
     outline: none;
     border-color: #3498db;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #cc0099;
+    left: -15px;
+    top: 50%;
+    font-size: 15px;
+    color: white;
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+.collapse {
+    width: 100vw;
+}
+
+.log-move {
+    transform: translateX(70vw);
+    z-index: 1;
 }
