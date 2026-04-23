@@ -87,6 +87,10 @@ form {
     gap: 75px;
 }
 
+.form-part {
+    position: relative;
+}
+
 .form-part > label {
     display: block;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -136,8 +140,10 @@ p > span:hover {
     cursor: pointer;
 }
 
+
 input[type='password']:user-invalid {
-    border: 1px solid red;
+    border: 2px solid red;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 input:focus {
@@ -161,6 +167,11 @@ input:focus {
     color: white;
 }
 
+.toggle-btn::before {
+    content: '☰';
+    transform: translateY(-2px);
+}
+
 .toggle-btn:hover {
     cursor: pointer;
 }
@@ -170,6 +181,27 @@ input:focus {
 }
 
 .log-move {
-    transform: translateX(70vw);
+    transform: translateX(-30vw);
     z-index: 1;
+}
+
+.error-message1,
+.error-message2 {
+    width: 200px;
+    color: red;
+    font-size: small;
+    padding-top: 3px;
+}
+
+.checkmark1,
+.checkmark2 {
+    position: absolute;
+    right: -25px;
+    top: 18px;
+}
+
+input[type='password'].touched:focus,
+input[type='password'].touched:not(:focus) {
+    border: 2px solid red;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
