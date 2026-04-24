@@ -4,6 +4,8 @@ const logWrapper = document.querySelector('.log-wrapper')
 const errorMessage1 = document.querySelector('.error-message1')
 const errorMessage2 = document.querySelector('.error-message2')
 const passwordConfirm = document.querySelector('#password-confirm')
+const userEmail = document.querySelector('#email')
+const emailOptions = document.querySelectorAll('#myEmail option')
 const password = document.querySelector('#password')
 const checkmark1 = document.querySelector('.checkmark1')
 const checkmark2 = document.querySelector('.checkmark2')
@@ -33,9 +35,10 @@ passwordConfirm.addEventListener('blur', function(e){
     }
     if(password.value === passwordConfirm.value) {
         errorMessage2.textContent = ''
+        passwordConfirm.classList.remove('touched')
     }else {
         errorMessage2.textContent = 'Please enter the same password'
-        passwordConfirm.classList.add('wrong')
+        passwordConfirm.classList.add('touched')
     }
 })
 
@@ -46,6 +49,7 @@ passwordConfirm.addEventListener('focus', function(e) {
 password.addEventListener('input', function(e) {
     if(password.value === '') {
         checkmark1.textContent = ''
+        errorMessage1.textContent = ''
         return
     }
     if(!password.checkValidity()) {
@@ -53,7 +57,7 @@ password.addEventListener('input', function(e) {
         errorMessage1.textContent = 'Password should be at least 8 digit with a Captial letter and multiple numbers'
         password.classList.add('touched')
     }else {
-        checkmark1 = '✅'
+        checkmark1.textContent = '✅'
         errorMessage1.textContent = ''
         password.classList.remove('touched')
     }
@@ -73,3 +77,10 @@ passwordConfirm.addEventListener('input', function(e) {
     }
 })
 
+userEmail.addEventListener('input', function(e) {
+    if(userEmail.value.includes('@')|| !userEmail.value) return
+    emailOptions.forEach(option => {
+        const domain = option.getAttribute('data-domain')
+        option.textContent = userEmail.value + domain
+})
+})

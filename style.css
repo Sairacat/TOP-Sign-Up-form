@@ -186,12 +186,15 @@ input:focus {
 }
 
 .error-message1,
-.error-message2 {
+.error-message2,
+.error-message3 {
+    line-height: 1.5vh;
     width: 200px;
     color: red;
     font-size: small;
     padding-top: 3px;
 }
+
 
 .checkmark1,
 .checkmark2 {
