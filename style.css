@@ -72,6 +72,7 @@ body {
 }
 
 form {
+    position: relative;
     width: 100%;
     height: 40vh;
     background-color: white;
@@ -165,6 +166,7 @@ input:focus {
     top: 50%;
     font-size: 15px;
     color: white;
+    z-index: 1;
 }
 
 .toggle-btn::before {
@@ -184,6 +186,7 @@ input:focus {
     transform: translateX(-30vw);
     z-index: 1;
 }
+
 
 .error-message1,
 .error-message2,
@@ -207,4 +210,40 @@ input[type='password'].touched:focus,
 input[type='password'].touched:not(:focus) {
     border: 2px solid red;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 45vw;
+    filter: drop-shadow(0 0 0 transparent);
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.320, 1),
+                filter 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    will-change: transform, filter;
+}
+
+#mypolygon {
+    z-index: 3;
+}
+
+.copy1 {
+    z-index: 2;
+}
+
+.copy2 {
+    z-index: 1;
+}
+
+.polygon-change {
+    filter: drop-shadow(4px 8px 12px rgba(196, 69, 105, 0.35));
+}
+
+.copy-move {
+    transform: translateX(20vw);
+    filter: drop-shadow(4px 8px 12px rgba(203, 129, 165, 0.35));
+}
+
+.copy-move2 {
+    transform: translateX(40vw);
+    filter: drop-shadow(4px 8px 12px rgba(99, 38, 74, 0.35));
 }

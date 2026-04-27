@@ -9,11 +9,17 @@ const emailOptions = document.querySelectorAll('#myEmail option')
 const password = document.querySelector('#password')
 const checkmark1 = document.querySelector('.checkmark1')
 const checkmark2 = document.querySelector('.checkmark2')
+const mypolygon = document.querySelector('#mypolygon')
+const copy1 = document.querySelector('.copy1')
+const copy2 = document.querySelector('.copy2')
 
 
 toggleButton.addEventListener('click', function(e) {
     togglePanel.classList.toggle('collapse')
     logWrapper.classList.toggle('log-move')
+    mypolygon.classList.toggle('polygon-change')
+    copy1.classList.toggle('copy-move')
+    copy2.classList.toggle('copy-move2')
 })
 
 password.addEventListener('blur', function(e) {

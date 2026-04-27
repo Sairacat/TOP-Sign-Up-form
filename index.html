@@ -20,6 +20,55 @@
         <p class="title">You <em>know</em> what to do.</p>
 
         <form action="" method="get" id="user_form">
+            <svg width="15vw" height="40vh" viewBox="0 0 100 100" preserveAspectRatio="none" id="mypolygon">
+                <polygon
+                points="
+                100,0
+                50,0
+                0,50
+                50,100
+                100,100
+                50,50
+                "
+                fill="#F8A5C2"
+                stroke="#F8A5C2"
+                stroke-width="1"
+                />
+            </svg>
+
+            <svg  width="15vw" height="40vh" viewBox="0 0 100 100" preserveAspectRatio="none" class="copy1">
+                <polygon
+                points="
+                100,0
+                50,0
+                0,50
+                50,100
+                100,100
+                50,50
+                "
+                fill="#F78FB3"
+                stroke="#F78FB3"
+                stroke-width="1"
+                />
+            </svg>
+
+            <svg width="15vw" height="40vh" viewBox="0 0 100 100" preserveAspectRatio="none" class="copy2">
+                <polygon
+                id="mypolygon"
+                points="
+                100,0
+                50,0
+                0,50
+                50,100
+                100,100
+                50,50
+                "
+                fill="#C44569"
+                stroke="#C44569"
+                stroke-width="1"
+                />
+            </svg>
+
             <div class="legend">Let's do this!</div>
             <div class="form-row">
                 <div class="form-part">
@@ -34,7 +83,7 @@
             <div class="form-row">
                 <div class="form-part">
                     <label for="email">EMAIL</label>
-                    <input type="text" id="email" name="user_email" placeholder="123@example.com" list="myEmail">
+                    <input type="email" id="email" name="user_email" placeholder="123@example.com" list="myEmail">
                     <datalist id="myEmail">
                         <option data-domain="@gmail.com">@gmail.com</option>
                         <option data-domain="@qq.com">@qq.com</option>
